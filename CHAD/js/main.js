@@ -62,7 +62,7 @@ yearSelect1.addEventListener('change', getDayOptions1)
 yearSelect1.addEventListener('keydown', regEx)
 
 function regEx (evt) {
-    if (evt.which < 48 && evt.which != 8 || evt.which > 57) {
+    if (evt.which < 48 && evt.which != 8 || evt.which > 57 && evt.which != [96-105]) {
         evt.preventDefault();
     }
 }
