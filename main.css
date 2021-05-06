@@ -1,0 +1,142 @@
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+select, input {
+    font-size: 1.25rem;
+    max-width: 150px;
+}
+
+option {
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    color: #000;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+h2, h3 {
+    font-weight: 500;
+    margin-bottom: 50px;
+    width: auto;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    select, input {
+        font-size: 1rem;
+        max-width: 150px;
+        max-height: 40px;
+    }
+
+    option {
+        font-size: .75rem;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    .select-date, .button-group {
+    width: 82% !important;
+    }
+}
+
+h3 {
+    margin-top: -30px;
+}
+
+a, button {
+    background-color: #570094;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    margin: 10px;
+    border: none;
+}
+
+.button-group {
+    margin: auto;
+    text-align: center;
+}
+
+a:active, button:active {
+    transform: scale(.97);
+    outline: none;
+}
+
+a:focus, button:focus {
+    outline: none;
+}
+
+.label {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.select-date {
+    display: grid;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+}
+
+.empty {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+}
+
+.label-month {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+
+.label-day {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.label-year {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+
+.label-date {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    margin-top: -15px;
+    font-weight: 700;
+}
+
+.github {
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+}

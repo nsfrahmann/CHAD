@@ -1,0 +1,54 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>C.H.A.D.</title>
+
+    <link href="..\Chad Age\main.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <a href="https://github.com/nsfrahmann/C.H.A.D." target="_blank" class="github">GitHub</a>
+    <h1>Chad Haxor Age Determinant</h1>
+    <!--First Date Field-->
+    <div class="select-date">
+        <div class="label label-date">Chad Date</div>
+        <div class="empty"></div>
+        <div class="label label-month">Month</div>
+        <select onchange="loading(this)" id="select-month-1">
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <div class="label label-day">Day</div>
+        <select onchange="loading(this)" id="select-day-1"></select>
+        <div class="label label-year">Year</div>
+        <input onchange="loading(this)" id="select-year-1" maxlength="4" />
+    </div>
+    <!--First Date Field End-->
+
+    <div class="button-group">
+        <button onclick="getResult(this)" value="birth" id="birth">Chad Day</button>
+        <button onclick="getResult(this)" value="chad-time" id="chad-time">Time in Chads</button>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    
+    <!--Scripts End-->
+    <script src="..\Chad Age\main.js"></script>
+</body>
+</html>
